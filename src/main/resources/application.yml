@@ -1,0 +1,19 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xxxx:3306/sanqi?characterEncoding=UTF-8&zeroDateTimeBehavior=round&useSSL=true
+    username: root
+    password: xxx
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+san:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: Authorization
+
+server:
+  port: 8081
